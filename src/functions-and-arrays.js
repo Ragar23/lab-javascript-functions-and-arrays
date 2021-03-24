@@ -69,20 +69,31 @@ function averageNumbers (avgNumb){
 
     return avgNumb[0]
 
-  } else if (Math.sign());
+  } else if (Math.sign()); //I can't get this one with negative numbers
 
-  
+  //Trying this approach but doesn't work
+  let sum = 0;
+  let count = avgNumb.length;
+    for ( i=0 ; i<count ; i++) {
+    sum += items[i];
+     return sum / count;
 }
+   
+
+}
+
+
+
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
 function averageWordLength (avgWordLength){
   if ( avgWordLength == 0 ){
-    return null;
-  }
+   
+     return null;
 
-  
+  }   
 }
 
 // Iteration #5: Unique arrays
@@ -100,8 +111,29 @@ const wordsUnique = [
   'bring'
 ];
 
+function uniquifyArray (uniqueArray){
+  if ( uniqueArray == 0 ){
+    return null;
+}
+}
+
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
+
+function doesWordExist (lookForWords, Words){
+  if (lookForWords == 0){
+    return null;
+
+  } else if (avgWordLength.length == 1){ //Tried this, also doesn't work
+
+    return wordsFind.includes( Words [fromIndex()]);
+
+  } 
+
+  //trying but not working. 
+  //let answer = doesWordExist (['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'])
+    //return lookForWords.includes(i)
+}
 
 // Iteration #7: Count repetition
 const wordsCount = [
@@ -117,6 +149,18 @@ const wordsCount = [
   'disobedience',
   'matter'
 ];
+
+function howManyTimes (howMany){
+  if (howMany == 0){
+    return 0;
+  } 
+
+  let words = 0; //Yrying this approach. Should return 1 when appears one time
+    for ( let i = 0 ; i < howMany.length; i++ ){
+    
+      
+    }  
+}
 
 // Iteration #8: Bonus
 
